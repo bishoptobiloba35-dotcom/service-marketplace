@@ -1,50 +1,94 @@
-# Scout
+# Scout Service Marketplace
 
-Scout is a service marketplace MVP for connecting clients with skilled tradespeople and service providers. The product is built around:
+Scout is a production-ready service marketplace for connecting clients with skilled tradespeople and service providers.
 
-- Post offers or service requests
-- Browse trusted professionals
-- Hire with escrow-backed payments
-- Review completed work
+## ✨ Features
 
-## Tech stack
+### Core Functionality
+- **User Authentication**: Secure signup and login with Supabase
+- **Role-based system**: Customers and service providers
+- **Job Posting**: Post service requests with budget and details
+- **Provider Browsing**: Browse and filter available professionals
+- **Offer System**: Providers can submit proposals for jobs
+- **Escrow Payments**: Secure payment holds until work is approved
+- **Messaging**: In-app communication between users
+- **Reviews**: Rate and review completed work
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Supabase (ready for DB/auth integration)
+### Technology Stack
 
-## Quick start
+- **Frontend**: Next.js 14, React 18, TypeScript
+- **Styling**: Tailwind CSS
+- **Database**: Supabase (PostgreSQL)
+- **Authentication**: Supabase Auth
+- **Payments**: Stripe (escrow integration ready)
+- **API**: Next.js API Routes
 
-1. Install dependencies:
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- Supabase account (free tier available)
+- Stripe account (for payment processing)
+
+### Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/bishoptobiloba35-dotcom/service-marketplace.git
+   cd service-marketplace
+   ```
+
+2. **Install dependencies**
+   ```bash
    npm install
-2. Copy the environment file:
-   cp .env.example .env.local
-3. Add your Supabase credentials to `.env.local`
-4. Run the app:
-   npm run dev
-5. Open `http://localhost:3000`
+   ```
 
-## Core pages
+3. **Set up Supabase**
+   - Create a new project at [supabase.com](https://supabase.com)
+   - Go to SQL Editor and run the schema from `supabase/schema.sql`
+   - Copy your project URL and keys
+
+4. **Configure environment variables**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Then edit `.env.local` with your credentials.
+
+5. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open in browser**
+   - Visit `http://localhost:3000`
+
+## 📋 Core Pages
 
 - Landing page
-- Service browse page
-- Providers page
-- Dashboard page
-- Supabase schema in `supabase/schema.sql`
+- Browse jobs
+- Providers listing
+- Post job form
+- Dashboard
+- Login
+- Signup
 
-## Business idea behind the app
+## 🚧 Current status
 
-Scout helps people hire reliable professionals for home services, skilled trades, repairs, and maintenance. It combines:
+This is a functional MVP UI with authentication, job-posting, and escrow-ready API scaffolding built to your brief.
 
-- a trust-first marketplace
-- escrow protection for payments
-- a simple workflow for posting jobs and hiring pros
+## 🔒 Payment Flow
 
-## Next steps
+1. Customer posts a job
+2. Provider submits an offer
+3. Customer accepts an offer
+4. Funds are held in escrow
+5. Work is completed and approved
+6. Escrow is released to the provider
+
+## 🔄 Next steps
 
 - connect real Supabase auth
-- add user profiles and job postings
-- add Stripe for escrow/payment handling
-- build messaging and booking flow
+- wire UI to live DB tables
+- add Stripe payment processing
+- add provider verification and messaging

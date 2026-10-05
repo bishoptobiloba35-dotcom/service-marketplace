@@ -17,15 +17,15 @@ export function Header() {
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
           <Link href="/browse" className="hover:text-brand-600">Browse</Link>
           <Link href="/providers" className="hover:text-brand-600">Pros</Link>
+          <Link href="/post-job" className="hover:text-brand-600">Post a job</Link>
           <Link href="/dashboard" className="hover:text-brand-600">Dashboard</Link>
-          <Link href="/" className="hover:text-brand-600">How it works</Link>
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link href="/browse" className="hidden rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 md:inline-flex">
+          <Link href="/post-job" className="hidden rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 md:inline-flex">
             Post a job
           </Link>
-          <Link href="/dashboard" className="rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
+          <Link href="/login" className="rounded-full bg-brand-500 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-600">
             Sign in
           </Link>
         </div>

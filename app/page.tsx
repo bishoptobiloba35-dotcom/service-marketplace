@@ -25,8 +25,8 @@ export default function HomePage() {
               <Link href="/browse" className="rounded-full bg-brand-500 px-6 py-3 font-semibold text-white transition hover:bg-brand-600">
                 Browse services
               </Link>
-              <Link href="/providers" className="rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-800 transition hover:border-brand-500 hover:text-brand-600">
-                Become a pro
+              <Link href="/post-job" className="rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-800 transition hover:border-brand-500 hover:text-brand-600">
+                Post a job
               </Link>
             </div>
 
